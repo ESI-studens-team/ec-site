@@ -2,21 +2,24 @@
 // 1. 「これはJSONデータですよ」と画面側に教えてあげる設定
 header('Content-Type: application/json; charset=utf-8');
 
-// 2. フロント（画面）が受け取りたい「仮のデータ」を準備
-// ※もし指定の項目があれば、ここの英語（"status"など）を書き換えます
+// 2. フロント（画面）が受け取りたい「本物のゲームEC用」の仮データを準備
 $mockData = [
     "status" => "success",
-    "message" => "チケット#24用のモックデータが正しく返ってきました！",
+    "message" => "ゲーム一覧（ライブラリ・ストア用）のモックデータ取得成功",
     "result" => [
         [
-            "id" => 1,
-            "title" => "ライブラリテスト本 A",
-            "author" => "テスト太郎"
+            "game_id"   => 101,
+            "title"     => "エルデンリング (ELDEN RING)",
+            "price"     => 9240,
+            "image_url" => "assets/images/elden_ring.jpg",
+            "developer" => "FromSoftware"
         ],
         [
-            "id" => 2,
-            "title" => "ライブラリテスト本 B",
-            "author" => "テスト次郎"
+            "game_id"   => 102,
+            "title"     => "モンスターハンターワイルズ",
+            "price"     => 9900,
+            "image_url" => "assets/images/mh_wilds.jpg",
+            "developer" => "CAPCOM"
         ]
     ]
 ];
