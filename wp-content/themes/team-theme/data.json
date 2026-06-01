@@ -1,0 +1,17 @@
+[
+  {
+    "title": "商品A",
+    "price": 1000,
+    "image": "img/a.jpg"
+  },
+  {
+    "title": "商品B",
+    "price": 2000,
+    "image": "img/b.jpg"
+  },
+  {
+    "title": "商品C",
+    "price": 3000,
+    "image": "img/c.jpg"
+  }
+]
