@@ -1,0 +1,105 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+
+/* フッター */
+
+.site-footer {
+    background-color: #033808;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 81px 100px 69px 100px;
+}
+
+.footer-left {
+    /*縦並びにするためのスタイル*/
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    margin: 0;
+}
+
+.footer-logo img {
+    display: block;
+    width: 290px;
+    height: auto;
+}
+
+
+.footer-links {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 34px;
+}
+
+.footer-col {
+    /* 文字の行間隔 */
+    line-height: 50px;
+}
+
+.footer-col a {
+    /* 文字のサイズ */
+    font-size: 25px;
+}
+
+.footer-col:first-child {
+    padding-right: 54px;
+    position: relative;
+}
+
+.footer-col:first-child::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -9px;
+    bottom: -39px;
+    width: 3px;
+    background-color: #fff;
+    /* 後ほど #fff に変更予定 */
+}
+
+
+.footer-col:nth-child(2) {
+    margin-left: 54px;
+    /* 73に変更予定 */
+}
+
+.footer-col:nth-child(3) {
+    margin-left: 40px;
+}
+
+.footer-sns {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: -39px;
+}
+
+.site-footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+iconify-icon {
+    font-size: 97px;
+    /* 後ほど97に変更予定 */
+
+}
