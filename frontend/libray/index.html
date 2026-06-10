@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-  
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,47 +11,61 @@
 <body>
 
   <header class="site-header">
-    <div class="container header-inner">
 
+    <div class="header-inner">
+
+      <!-- ロゴ -->
       <div class="logo">
-        <img src="./images/logo.svg" alt="ESION ロゴ">
+        <img src="./images/logo.svg" alt="ESIONロゴ">
       </div>
 
-      <nav class="main-nav">
-        <a href="#" class="active">ストア</a>
-        <a href="#">ライブラリ</a>
-        <a href="#" class="has-arrow">カテゴリー</a> </nav>
-      </nav>
+      <!-- 中央 -->
+      <div class="center-area">
 
-      <div class="header-actions">
+        <nav class="main-nav">
+          <a href="#">ストア</a>
+          <a href="#" class="active">ライブラリ</a>
+          <a href="#">カテゴリー ▼</a>
+        </nav>
+
         <div class="search-box">
-          <img src="./images/検索マーク.svg" alt="検索アイコン">
-          <input type="search" placeholder="検索">
+          <img src="./images/検索マーク.svg" alt="">
+          <input type="search">
         </div>
-      
-        <div class="user-action-group">
-          <div class="auth-links">
-            <a href="#">ログイン</a>
-            <span class="divider">|</span>
-            <a href="#">ログアウト</a>
-          </div>
-      
-          <div class="icon-links">
-            <a class="iine" href="#">
-              <img src="./images/いいねマーク.svg" alt="お気に入り">
-            </a>
-            <a class="cart" href="#">
-              <img src="./images/カートマーク.svg" alt="ショッピングカート">
-            </a>
-            <a class="user" href="#">
-              <img src="./images/アイコンマーク.svg" alt="ユーザーメニュー">
-            </a>
-          </div>
+
+      </div>
+
+      <!-- 右 -->
+      <div class="header-right">
+
+        <div class="auth-links">
+          <a href="#">ログイン</a>
+          <span>|</span>
+          <a href="#">ログアウト</a>
         </div>
+
+        <div class="icon-links">
+
+          <a href="#">
+            <img src="./images/いいねマーク.svg" alt="">
+          </a>
+
+          <a href="#">
+            <img src="./images/カートマーク.svg" alt="">
+          </a>
+
+          <a href="#">
+            <img src="./images/アイコンマーク.svg" alt="">
+          </a>
+
+        </div>
+
       </div>
 
     </div>
+
   </header>
 
-  </body>
+</body>
+
 </html>
