@@ -19,7 +19,7 @@ main {
 /* フッター */
 
 .site-footer {
-    background-color: #033808;
+    background: linear-gradient(165deg, #1FE531 0%, #033808 30%);
     color: #fff;
     display: flex;
     align-items: flex-end;
