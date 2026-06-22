@@ -9,10 +9,339 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #111;
 }
 
+/* ヘッダー */
+
+/* ヘッダー */
+
+.site-header {
+    background: linear-gradient(170deg, #0BDA1E 7%, #033808 32%);
+}
+
+.header-inner {
+    max-width: 1440px;
+
+    margin: 0 24px 0 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 236px;
+}
+
+.logo img {
+    width: 100%;
+    display: block;
+}
+
+.center-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-nav {
+    display: flex;
+    gap: 115px;
+
+    margin-top: 40px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.main-nav .active {
+    color: #18D234;
+    border-bottom: 4px solid #18D234;
+}
+
+.search-box {
+    width: 586px;
+    height: 39px;
+
+    border: 3px solid white;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 10px;
+    margin: 25px 0 32px;
+}
+
+.search-box img {
+    width: 25px;
+    height: 24px;
+}
+
+.search-box input {
+    flex: 1;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    color: white;
+
+    margin-left: 15px;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.auth-links {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.auth-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.auth-links span {
+    width: 3px;
+    height: 32px;
+    background: white;
+    margin: 0 20px;
+    font-size: 0;
+}
+
+.icon-links {
+    display: flex;
+    gap: 40px;
+}
+
+.icon-links img {
+    display: block;
+    width: 52px;
+    height: 52px;
+}
+
+
+
+/* メイン画面 */
 main {
     flex: 1;
+}
+
+.store-main {
+    background: linear-gradient(180deg, #2c2b2f 0%, #4e2d63 52%, #145b25 100%);
+    color: #fff;
+    padding: 24px 0 80px;
+}
+
+.section-inner {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-title {
+    margin: 0 0 46px;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+
+/* メインビジュアル */
+.hero {
+    padding: 179px 0 56px;
+}
+
+.hero-inner {
+    width: 86%;
+    max-width: 1214px;
+    margin: 0 auto;
+}
+
+
+.hero-inner img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero-dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 27px;
+}
+
+.dot {
+    width: 35px;
+    height: 35px;
+    background-color: #d9d9d9;
+    display: inline-block;
+}
+
+.dot.active {
+    background-color: #ffffff;
+}
+
+/* 人気ランキング */
+.ranking-section {
+    padding: 40px 0 80px;
+}
+
+.ranking-title {
+    margin: 0 0 12px;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.ranking-list .ranking-title {
+    margin-top: 71px;
+}
+
+
+.ranking-card {
+    background-color: #bdbdbd;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.ranking-card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* １位のランキングカードのサイズを大きくするために、ランキングカードのクラスを追加しました。 */
+.ranking-card-large {
+    width: 100%;
+    max-width: none;
+    height: 477px;
+}
+
+.ranking-first {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.ranking-list {
+    display: flex;
+    max-width: 1100px;
+    margin: 28px auto 0;
+    gap: 20px;
+}
+
+.ranking-item {
+    flex: 1;
+}
+
+
+/* ２位と３位のランキングカードのサイズを小さくするために、ランキングカードのクラスを追加しました。 */
+.ranking-card-small {
+    width: 100%;
+    max-width: none;
+    height: 270px;
+}
+
+
+
+
+/* おすすめ */
+.recommend-section {
+    padding: 40px 0 80px;
+}
+
+.ranking-section .section-title {
+    max-width: 1100px;
+    margin: 0 auto 32px;
+}
+
+/* おすすめ画像を表示するためのスタイルを追加しました。 */
+.recommend-mock {
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+
+.recommend-mock img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* カテゴリー別 */
+.category-section {
+    padding: 40px 0 1px;
+}
+
+/* カテゴリー別だけ、左右の外側余白を約50pxずつにする */
+.category-section .section-inner {
+    width: calc(100% - 100px);
+    max-width: none;
+    margin: 0 auto;
+}
+
+.category-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* カード4枚のまとまり */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px 32px;
+    flex: 1;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.category-item {
+    width: 100%;
+}
+
+.category-name {
+    margin: 0 0 12px;
+    font-size: 47px;
+    font-weight: 700;
+}
+
+.category-card {
+    background-color: #1d1d1d;
+    overflow: hidden;
+    border-radius: 6px;
+    width: 100%;
+}
+
+/* カテゴリー画像 */
+.category-card img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* 矢印 */
+.category-arrow {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 120px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    flex-shrink: 0;
 }
 
 

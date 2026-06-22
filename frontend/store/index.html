@@ -14,12 +14,163 @@
 
 <body>
 
+    <!-- ヘッダー -->
 
-    <main class="container">
-        <!-- ここにページ本体を追加 -->
+    <header class="site-header">
+
+        <div class="header-inner">
+
+            <!-- ロゴ -->
+            <div class="logo">
+                <img src="../images/ESION_logo.svg" alt="ESIONロゴ">
+            </div>
+
+            <!-- 中央 -->
+            <div class="center-area">
+
+                <nav class="main-nav">
+                    <a href="#">ストア</a>
+                    <a href="#" class="active">ライブラリ</a>
+                    <a href="#">カテゴリー ▼</a>
+                </nav>
+
+                <div class="search-box">
+                    <img src="./../libray/images/検索マーク.svg" alt="">
+                    <input type="search">
+                </div>
+
+            </div>
+
+            <!-- 右 -->
+            <div class="header-right">
+
+                <div class="auth-links">
+                    <a href="#">ログイン</a>
+                    <span>|</span>
+                    <a href="#">ログアウト</a>
+                </div>
+
+                <div class="icon-links">
+
+                    <a href="#">
+                        <img src="./../libray/images/いいねマーク.svg" alt="">
+                    </a>
+
+                    <a href="#">
+                        <img src="./../libray/images/カートマーク.svg" alt="">
+                    </a>
+
+                    <a href="#">
+                        <img src="./../libray/images/アイコンマーク.svg" alt="">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- メイン -->
+
+    <main class="store-main">
+        <section class="hero">
+            <div class="hero-inner">
+                <img src="../images/Karigazou.png" alt="メインビジュアル">
+            </div>
+
+            <div class="hero-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+        <section class="ranking-section">
+            <div class="section-inner">
+                <h2 class="section-title">人気ランキング</h2>
+
+                <div class="ranking-first">
+                    <h3 class="ranking-title">1位 👑</h3>
+                    <div class="ranking-card ranking-card-large">
+                        <img src="../images/Karigazou.png" alt="人気ランキング1位のゲーム画像">
+                    </div>
+                </div>
+
+                <div class="ranking-list">
+                    <div class="ranking-item">
+                        <h3 class="ranking-title">2位</h3>
+                        <div class="ranking-card ranking-card-small">
+                            <img src="../images/Karigazou.png" alt="人気ランキング2位のゲーム画像">
+                        </div>
+                    </div>
+
+                    <div class="ranking-item">
+                        <h3 class="ranking-title">3位</h3>
+                        <div class="ranking-card ranking-card-small">
+                            <img src="../images/Karigazou.png" alt="人気ランキング3位のゲーム画像">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recommend-section">
+            <div class="section-inner">
+                <h2 class="section-title">あなたへのおすすめ</h2>
+
+                <div class="recommend-mock">
+                    <img src="../images/Karigazou.png" alt="あなたへのおすすめ 完成イメージ">
+                </div>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <div class="section-inner">
+                <h2 class="section-title">カテゴリー別</h2>
+
+                <div class="category-wrapper">
+                    <button class="category-arrow category-arrow-left">‹</button>
+
+                    <div class="category-grid">
+                        <div class="category-item">
+                            <p class="category-name">カテゴリー名</p>
+                            <div class="category-card">
+                                <img src="../images/Karigazou.png" alt="カテゴリー画像">
+                            </div>
+                        </div>
+
+                        <div class="category-item">
+                            <p class="category-name">カテゴリー名</p>
+                            <div class="category-card">
+                                <img src="../images/Karigazou.png" alt="カテゴリー画像">
+                            </div>
+                        </div>
+
+                        <div class="category-item">
+                            <p class="category-name">カテゴリー名</p>
+                            <div class="category-card">
+                                <img src="../images/Karigazou.png" alt="カテゴリー画像">
+                            </div>
+                        </div>
+
+                        <div class="category-item">
+                            <p class="category-name">カテゴリー名</p>
+                            <div class="category-card">
+                                <img src="../images/Karigazou.png" alt="カテゴリー画像">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="category-arrow category-arrow-right">›</button>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <!-- # フッター -->
     <footer class="site-footer">
         <div class="footer-left">
             <h2 class="footer-logo">
