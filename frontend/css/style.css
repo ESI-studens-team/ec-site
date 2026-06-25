@@ -12,9 +12,9 @@ body {
     background-color: #111;
 }
 
-/* ヘッダー */
 
-/* ヘッダー */
+
+/* ヘッダー一時的 */
 
 .site-header {
     background: linear-gradient(170deg, #0BDA1E 7%, #033808 32%);
@@ -345,7 +345,7 @@ main {
 }
 
 
-/* フッター */
+/* フッター一時的 */
 
 .site-footer {
     background: linear-gradient(165deg, #1FE531 0%, #033808 30%);
