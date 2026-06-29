@@ -1,0 +1,101 @@
+body{
+  margin: auto;
+  background-color: #323031;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.category-page{
+  width: 100%;
+  max-width: 1440px;
+  /* 余白はデザインに応じて調整してください */
+  padding: 277px 114px 315px 134px; 
+  box-sizing: border-box;
+}
+
+.category-title{
+  font-size: 97px;
+  font-weight: bold;
+  margin: 0 0 147px 0; /* 下のアドバンス枠との余白 */
+}
+
+.featured-game{
+  margin-bottom: 316px;
+}
+
+.game-title{
+  font-size: 70px;
+  margin: 0 0 40px 0; /* ゲーム名と画像・情報の間の余白 */
+}
+
+.featured-content{
+  display: flex;
+  gap: 50px; /* 画像と右側情報コンテンツの間の隙間 */
+  align-items: flex-start;
+}
+
+.game-image img{
+  width: 772px;
+  display: block;
+  border-radius: 30px; /* デザインに合わせた画像の角丸 */
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 500px;
+  margin-top: 90px;
+}
+
+.game-price{
+  font-size: 71px;
+  margin: 0; /* 不要なmargin-topを削除し、画像の上端と揃えます */
+  line-height: 1;
+}
+
+.game-action{
+  display: flex;
+  align-items: center;
+  gap: 25px; /* ハートとカートボタンの間隔 */
+}
+
+.game-action img{
+  width: 96px;
+  height: 96px;
+}
+
+.favorite-icon {
+  width: 50px; /* ハートのサイズ（必要に応じて調整してください） */
+  height: auto;
+  cursor: pointer;
+}
+
+.cart-btn{
+  background-color: #006837;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  padding: 24px 48px;
+  font-size: 32px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.game-review {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  white-space: nowrap;
+}
+
+.game-review span{
+  font-size: 44px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.game-review img{
+  width: 52px;
+  height: 52px;
+}
