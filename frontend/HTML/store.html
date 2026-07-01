@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EC-site</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 
     <!-- # アイコンフォントの読み込み -->
     <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
@@ -118,16 +118,77 @@
             </div>
         </section>
 
+
+
         <section class="recommend-section">
             <div class="section-inner">
                 <h2 class="section-title">あなたへのおすすめ</h2>
 
-                <div class="recommend-mock">
-                    <img src="../images/Karigazou.png" alt="あなたへのおすすめ 完成イメージ">
+                <div class="recommend-layout">
+                    <!-- 左：半円 -->
+                    <div class="recommend-left">
+                        <div class="recommend-circle-wrap">
+                            <div class="recommend-circle-outer">
+                                <div class="recommend-circle-inner"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 中央：棒 + カード + 棒 -->
+                    <div class="recommend-center">
+                        <div class="recommend-bar-wrap recommend-bar-wrap-top">
+                            <div class="recommend-bar recommend-bar-top"></div>
+                        </div>
+
+                        <div class="recommend-card-wrap">
+                            <div class="recommend-card">
+                                <div class="recommend-image">
+                                    <img src="../images/Karigazou.png" alt="おすすめゲーム画像">
+                                </div>
+
+                                <div class="recommend-info">
+                                    <h3 class="recommend-game-title">ゲーム名</h3>
+
+                                    <p class="recommend-text">
+                                        テキストテキストテキストテキストテキストテキストテキスト
+                                        テキストテキストテキストテキストテキストテキストテキスト
+                                        テキストテキスト。
+                                    </p>
+
+                                    <p class="recommend-label">レビュー</p>
+
+                                    <p class="recommend-star">★★★☆☆</p>
+
+                                    <a href="#" class="recommend-button">カートに追加</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recommend-bar-wrap recommend-bar-wrap-bottom">
+                            <div class="recommend-bar recommend-bar-bottom"></div>
+                        </div>
+                    </div>
+
+                    <!-- 右：三つ矢印 -->
+                    <div class="recommend-right">
+                        <button class="recommend-arrow" type="button" aria-label="前のおすすめを見る">
+                            <span>⌃</span>
+                            <span>⌃</span>
+                            <span>⌃</span>
+                        </button>
+
+                        <button class="recommend-arrow" type="button" aria-label="次のおすすめを見る">
+                            <span>⌄</span>
+                            <span>⌄</span>
+                            <span>⌄</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
 
+
+        <!-- カテゴリー別 -->
         <section class="category-section">
             <div class="section-inner">
                 <h2 class="section-title">カテゴリー別</h2>

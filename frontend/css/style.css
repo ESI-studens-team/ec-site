@@ -252,61 +252,258 @@ main {
     height: 270px;
 }
 
-
-
-
-/* おすすめ */
+//* おすすめ欄全体 */
 .recommend-section {
     padding: 40px 0 80px;
+    overflow: hidden;
 }
 
-.ranking-section .section-title {
-    max-width: 1100px;
-    margin: 0 auto 32px;
-}
-
-/* おすすめ画像を表示するためのスタイルを追加しました。 */
-.recommend-mock {
+.recommend-section .section-inner {
     width: 100%;
-    max-width: 920px;
-    margin: 0 auto;
+    max-width: none;
+    margin: 0;
+}
+
+.recommend-section .section-title {
+    margin: 0 0 40px;
+    padding-left: 0;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+/* 左：半円 / 中央：カードと棒 / 右：矢印 */
+.recommend-layout {
+    display: grid;
+    grid-template-columns: 420px minmax(0, 1fr);
+    column-gap: 0;
+    align-items: center;
+    position: relative;
+}
+
+/* 左の半円 */
+.recommend-left {
+    position: relative;
+    height: 720px;
+    overflow: hidden;
+}
+
+.recommend-circle-wrap {
+    position: absolute;
+    left: -330px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 684px;
+    height: 684px;
+}
+
+.recommend-circle-outer {
+    width: 684px;
+    height: 684px;
+    border-radius: 50%;
+    background: #5f5963;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recommend-circle-inner {
+    width: 520px;
+    height: 520px;
+    border-radius: 50%;
+    background: #d9d4d4;
+}
+
+/* 中央 */
+.recommend-center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 153px;
+    justify-content: center;
+    min-height: 720px;
+}
+
+/* 棒のラッパー */
+.recommend-bar-wrap {
+    display: flex;
+    width: 100%;
+}
+
+.recommend-bar-wrap-top {
+    justify-content: flex-start;
+}
+
+.recommend-bar-wrap-bottom {
+    justify-content: flex-start;
 }
 
 
-.recommend-mock img {
+/* 棒本体 */
+.recommend-bar {
+    width: 1070px;
+    height: 162px;
+    max-width: 100%;
+    background: linear-gradient(90deg, #1f1f1f 0%, #9a9a9a 100%);
+    opacity: 0.7;
+    flex-shrink: 0;
+}
+
+.recommend-bar-top {
+    transform: translateX(-50px) rotate(-10deg);
+    transform-origin: center;
+}
+
+.recommend-bar-bottom {
+    transform: translateX(-50px) rotate(10deg);
+    transform-origin: center;
+}
+
+
+/* カード */
+.recommend-card-wrap {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.recommend-card {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    width: 1059px;
+    height: 319px;
+    max-width: 100%;
+    background: #2b252b;
+    overflow: hidden;
+}
+
+.recommend-image {
+    min-width: 0;
+}
+
+.recommend-image img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
+
+/* 右の矢印 */
+.recommend-right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+}
+
+.recommend-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.recommend-arrow span {
+    color: #fff;
+    font-size: 64px;
+    line-height: 0.8;
+}
+
+/* 文字 */
+.recommend-info {
+    padding: 26px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.recommend-game-title {
+    margin: 0 0 18px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.recommend-text {
+    margin: 0 0 18px;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.recommend-label {
+    margin: 0 0 6px;
+    font-size: 12px;
+}
+
+.recommend-star {
+    margin: 0 0 18px;
+    font-size: 22px;
+    line-height: 1;
+    color: #ffd84d;
+}
+
+.recommend-button {
+    display: inline-block;
+    width: fit-content;
+    padding: 10px 18px;
+    background: #0a7b31;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+
 
 /* カテゴリー別 */
 .category-section {
     padding: 40px 0 1px;
 }
 
-/* カテゴリー別だけ、左右の外側余白を約50pxずつにする */
+/* セクション全体 */
 .category-section .section-inner {
     width: calc(100% - 100px);
-    max-width: none;
+    max-width: 1200px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 52px minmax(0, 1fr) 52px;
+    column-gap: 28px;
 }
 
+/* 上のタイトルをカード列と同じ列に置く */
+.category-section .section-title {
+    grid-column: 2;
+    margin: 0 0 32px;
+}
+
+/* 矢印 + カード全体 */
 .category-wrapper {
-    display: flex;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 52px minmax(0, 1fr) 52px;
+    column-gap: 28px;
     align-items: center;
-    gap: 16px;
 }
 
 /* カード4枚のまとまり */
 .category-grid {
+    grid-column: 2;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 28px 32px;
-    flex: 1;
-    max-width: 1100px;
-    margin: 0 auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 24px;
 }
 
+/* 各カテゴリー */
 .category-item {
     width: 100%;
 }
@@ -317,32 +514,38 @@ main {
     font-weight: 700;
 }
 
+/* カード本体 */
 .category-card {
+    width: 100%;
     background-color: #1d1d1d;
     overflow: hidden;
     border-radius: 6px;
-    width: 100%;
 }
 
-/* カテゴリー画像 */
+/* カード画像 */
 .category-card img {
     display: block;
     width: 100%;
-    height: 200px;
+    height: 220px;
     object-fit: cover;
 }
 
 /* 矢印 */
 .category-arrow {
+    width: 52px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: none;
     border: none;
     color: #fff;
-    font-size: 120px;
+    font-size: 88px;
     cursor: pointer;
     padding: 0;
     line-height: 1;
-    flex-shrink: 0;
 }
+
 
 
 /* フッター一時的 */
