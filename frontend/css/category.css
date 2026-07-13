@@ -1,157 +1,195 @@
-body{
+/* =========================
+   全体
+========================= */
+body {
   margin: auto;
   background-color: #323031;
   color: #fff;
   font-family: sans-serif;
 }
 
-.category-page{
+.category-page {
   width: 100%;
   max-width: 1440px;
-  /* 余白はデザインに応じて調整してください */
-  padding: 277px 71px 315px 134px; 
+  padding: 277px 71px 315px 134px;
   box-sizing: border-box;
 }
 
-.category-title{
+/* =========================
+   タイトル
+========================= */
+.category-title {
+  margin-bottom: 147px;
+
   font-size: 97px;
   font-weight: bold;
-  margin: 0 0 147px 0; /* 下のアドバンス枠との余白 */
 }
 
-.featured-game{
+/* =========================
+   注目ゲーム
+========================= */
+.featured-game {
   margin-bottom: 316px;
 }
 
-.game-title{
+.game-title {
+  margin-bottom: 40px;
+
   font-size: 70px;
-  margin: 0 0 40px 0; /* ゲーム名と画像・情報の間の余白 */
+  font-weight: bold;
 }
 
-.featured-content{
+.featured-content {
   display: flex;
-  gap: 50px; /* 画像と右側情報コンテンツの間の隙間 */
   align-items: flex-start;
+  gap: 50px;
 }
 
-.game-image img{
+/* ゲーム画像 */
+.game-image img {
   width: 772px;
+
   display: block;
-  border-radius: 30px; /* デザインに合わせた画像の角丸 */
+
+  border-radius: 30px;
 }
 
+/* ゲーム情報 */
 .game-info {
   display: flex;
   flex-direction: column;
   gap: 35px;
+
   width: 500px;
   margin-top: 90px;
 }
 
-.game-price{
+.game-price {
+  margin: 0;
+
   font-size: 71px;
-  margin: 0; /* 不要なmargin-topを削除し、画像の上端と揃えます */
   line-height: 1;
 }
 
-.game-action{
+/* ボタン */
+.game-action {
   display: flex;
   align-items: center;
-  gap: 25px; /* ハートとカートボタンの間隔 */
+  gap: 25px;
 }
 
-.game-action img{
+.game-action img {
   width: 96px;
   height: 96px;
 }
 
 .favorite-icon {
-  width: 50px; /* ハートのサイズ（必要に応じて調整してください） */
+  width: 50px;
   height: auto;
+
   cursor: pointer;
 }
 
-.cart-btn{
+.cart-btn {
+  padding: 24px 48px;
+
   background-color: #006837;
   color: #fff;
   border: none;
   border-radius: 15px;
-  padding: 24px 48px;
+
   font-size: 32px;
-  cursor: pointer;
   font-weight: bold;
+
+  cursor: pointer;
 }
 
+/* レビュー */
 .game-review {
   display: flex;
   align-items: center;
   gap: 9px;
+
   white-space: nowrap;
 }
 
-.game-review span{
+.game-review span {
+  margin-right: 10px;
+
   font-size: 44px;
   font-weight: bold;
-  margin-right: 10px;
 }
 
-.game-review img{
+.game-review img {
   width: 52px;
   height: 52px;
 }
 
-.game-list{
-  margin-top: 316px;
+/* =========================
+   ゲーム一覧
+========================= */
+.game-list {
   display: flex;
   flex-wrap: wrap;
   gap: 155px;
+
+  margin-top: 316px;
 }
 
-.game-card{
+.game-card {
   width: 512px;
 }
 
-.card-title{
+/* カード */
+.card-title {
+  margin-bottom: 14px;
+
   font-size: 50px;
   font-weight: bold;
-  margin: 0 0 14px;
 }
 
-.card-image{
+.card-image {
   width: 512px;
 }
 
 .card-image img {
   width: 100%;
+
   display: block;
   object-fit: contain;
+
   border-radius: 25px;
 }
 
-.card-info{
+.card-info {
   display: flex;
   align-items: center;
   gap: 23px;
+
   margin-top: 20px;
 }
 
-.card-price{
-  font-size: 45px;
+.card-price {
   margin: 0;
+
+  font-size: 45px;
 }
 
-.card-info .favorite-icon{
+.card-info .favorite-icon {
   width: 63px;
   height: 63px;
 }
 
-.card-cart-btn{
+.card-cart-btn {
+  padding: 10px 18px;
+
   background-color: #006837;
   color: #fff;
   border: none;
   border-radius: 15px;
-  padding: 10px 18px;
+
   font-size: 22px;
   font-weight: bold;
+
   cursor: pointer;
 }
