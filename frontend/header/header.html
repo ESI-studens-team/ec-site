@@ -19,58 +19,74 @@
         <img src="../images/ESION_logo.svg" alt="ESIONロゴ">
       </div>
 
-      <!-- 中央 -->
+      <!-- 中央エリア -->
       <div class="center-area">
 
+        <!-- ナビゲーション -->
         <nav class="main-nav">
           <a href="#">ストア</a>
           <a href="#" class="active">ライブラリ</a>
-          <a href="#">カテゴリー ▼</a>
+
+          <div class="category-area">
+            <a href="#" id="categoryBtn">
+              カテゴリー
+              <span id="categoryArrow">▼</span>
+            </a>
+
+            <div class="category-menu" id="categoryMenu">
+              <a href="#">カテゴリー名</a>
+              <a href="#">カテゴリー名</a>
+              <a href="#">カテゴリー名</a>
+              <a href="#">カテゴリー名</a>
+              <a href="#">カテゴリー名</a>
+            </div>
+          </div>
         </nav>
 
+        <!-- 検索 -->
         <div class="search-area">
 
           <div class="search-box" id="searchBox">
-            <img src="../images/検索マーク.svg" alt="">
+            <img src="../images/検索マーク.svg" alt="検索">
             <input type="search">
           </div>
-        
+
           <div class="search-result" id="searchResult">
             <h2>よく検索されているゲーム</h2>
-        
+
             <div class="game-item"></div>
             <div class="game-item"></div>
             <div class="game-item"></div>
             <div class="game-item"></div>
           </div>
-        
+
         </div>
 
       </div>
 
-      <!-- 右 -->
+      <!-- 右側 -->
       <div class="header-right">
 
+        <!-- ログイン -->
         <div class="auth-links">
           <a href="#">ログイン</a>
           <span>|</span>
           <a href="#">ログアウト</a>
         </div>
 
+        <!-- アイコン -->
         <div class="icon-links">
-
           <a href="#">
-            <img src="../images/いいねマーク.svg" alt="">
+            <img src="../images/いいねマーク.svg" alt="お気に入り">
           </a>
 
           <a href="#">
-            <img src="../images/カートマーク.svg" alt="">
+            <img src="../images/カートマーク.svg" alt="カート">
           </a>
 
           <a href="#">
-            <img src="../images/アイコンマーク.svg" alt="">
+            <img src="../images/アイコンマーク.svg" alt="マイページ">
           </a>
-
         </div>
 
       </div>

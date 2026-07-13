@@ -1,151 +1,226 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+/* =========================
+   リセット
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.site-header{
+/* =========================
+   ヘッダー
+========================= */
+.site-header {
   background: linear-gradient(170deg, #0BDA1E 7%, #033808 32%);
 }
 
-.header-inner{
-  max-width:1440px;
-  
-  margin:0 24px 0 52px;
-  display:flex;
-  justify-content: space-between;
-  align-items:center;
-}
-.logo{
-  width:236px;
-}
+.header-inner {
+  max-width: 1440px;
+  margin: 0 24px 0 52px;
 
-.logo img{
-  width:100%;
-  display:block;
-}
-
-.center-area{
   display: flex;
-  flex-direction:column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.main-nav{
+/* =========================
+   ロゴ
+========================= */
+.logo {
+  width: 236px;
+}
+
+.logo img {
+  width: 100%;
+  display: block;
+}
+
+/* =========================
+   中央エリア
+========================= */
+.center-area {
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   ナビゲーション
+========================= */
+.main-nav {
   display: flex;
   gap: 115px;
-  
+
   margin-top: 40px;
 }
 
-.main-nav a{
-  text-decoration:none;
-  color:white;
-  font-size:25px;
-  font-weight:700;
+.main-nav a {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  text-decoration: none;
 }
 
-.main-nav .active{
+.main-nav .active {
   color: #18D234;
-  border-bottom:4px solid #18D234;
+  border-bottom: 4px solid #18D234;
 }
 
-.search-box{
+/* =========================
+   検索
+========================= */
+.search-area {
+  position: relative;
+}
+
+.search-box {
   width: 586px;
   height: 39px;
-
-  border:3px solid white;
 
   display: flex;
   align-items: center;
 
   padding: 0 10px;
   margin: 25px 0 32px;
+
+  border: 3px solid white;
 }
 
-.search-box img{
+.search-box img {
   width: 25px;
   height: 24px;
 }
 
-.search-box input{
+.search-box input {
   flex: 1;
 
-  background-color: transparent;
+  margin-left: 15px;
+
+  background: transparent;
   border: none;
   outline: none;
 
   color: white;
-
-  margin-left: 15px;
 }
 
-.header-right{
-  display:flex;
-  flex-direction:column;
-  align-items:flex-end;
-}
-
-.auth-links{
-  display:flex;
-  align-items:center;
-  margin-bottom:15px;
-}
-
-.auth-links a{
-  text-decoration: none;
-  color: white;
-  font-size: 25px;
-  font-weight: 700;
-}
-
-.auth-links span{
-  width:3px;
-  height:32px;
-  background:white;
-  margin:0 20px;
-  font-size:0;
-}
-
-.icon-links{
-  display: flex;
-  gap: 40px;
-}
-
-.icon-links img{
-  display:block;
-  width:52px;
-  height:52px;
-}
-
-
-
-.search-area{
-  position: relative;
-}
-
-.search-result{
+.search-result {
   position: absolute;
   top: calc(100% - 20px);
   left: 0;
 
   width: 549px;
-  background: #1C341E;
-
   padding: 30px;
 
-  display: none;
+  background: #1C341E;
 
+  display: none;
   z-index: 100;
 }
 
-.search-result h2{
+.search-result h2 {
+  margin-bottom: 30px;
+
   color: white;
   font-size: 22px;
-  margin-bottom: 30px;
 }
 
-.game-item{
+.game-item {
   height: 68px;
-  background: #aaa;
   margin-bottom: 20px;
+
+  background: #aaa;
+}
+
+/* =========================
+   カテゴリー
+========================= */
+.category-area {
+  position: relative;
+}
+
+#categoryBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#categoryArrow {
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+#categoryArrow.open {
+  transform: rotate(180deg);
+}
+
+.category-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  width: 212px;
+  padding: 30px;
+
+  background: #1D341E;
+
+  display: none;
+  z-index: 100;
+}
+
+.category-menu a {
+  display: block;
+
+  margin-bottom: 20px;
+
+  color: white;
+  font-size: 21px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.category-menu a:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================
+   右側
+========================= */
+.header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.auth-links {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 15px;
+}
+
+.auth-links a {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.auth-links span {
+  width: 3px;
+  height: 32px;
+
+  margin: 0 20px;
+
+  background: white;
+  font-size: 0;
+}
+
+.icon-links {
+  display: flex;
+  gap: 40px;
+}
+
+.icon-links img {
+  display: block;
+  width: 52px;
+  height: 52px;
 }
