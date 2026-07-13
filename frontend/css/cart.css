@@ -1,0 +1,138 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #323031;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+
+/* ページ全体 */
+.category-page.cart-page {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 120px 64px 160px;
+    box-sizing: border-box;
+}
+
+
+/* 上部：カートタイトルと支払いボタン*/
+.cart-header {
+    width: 1061px;
+    margin: 260px auto 360px;
+    display: grid;
+    grid-template-columns: max-content 402px;
+    column-gap: 219px;
+    align-items: center;
+}
+
+.cart-title {
+    margin: 0;
+    display: flex;
+    align-items: baseline;
+    gap: 18px;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.cart-count {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.checkout-btn {
+    width: 402px;
+    height: 101px;
+    border: none;
+    border-radius: 10px;
+    background-color: #006837;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+
+/* 商品一覧 */
+.cart-list {
+    width: 1061px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 422px 422px;
+    column-gap: 217px;
+    row-gap: 234px;
+}
+
+
+/* 1つ分のカード */
+.game-card.cart-item {
+    width: 450px;
+}
+
+
+/* 商品画像 */
+.card-image {
+    width: 450px;
+}
+
+.card-image img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 18px;
+    background-color: #a9a9a9;
+}
+
+
+
+/* ゲーム名と値段 */
+.cart-meta {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+    column-gap: 46px;
+    margin-top: 33px;
+}
+
+
+.card-title {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.card-price {
+    margin: 0;
+    font-size: 45px;
+    line-height: 1;
+    white-space: nowrap;
+    justify-self: end;
+}
+
+
+
+/* カートから削除ボタン */
+.remove-btn {
+    width: 274px;
+    height: 66px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #006837;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+}
