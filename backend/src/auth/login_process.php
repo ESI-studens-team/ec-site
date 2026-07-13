@@ -38,7 +38,7 @@ if (!$user) {
     exit;
 }
 
-if (!verifyPassword($password, $user['password'])) {
+if (!verifyPassword($password, $user['password_hash'])) {
     echo 'メールアドレスまたはパスワードが正しくありません。';
     exit;
 }
