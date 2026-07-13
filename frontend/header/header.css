@@ -117,3 +117,35 @@
   height:52px;
 }
 
+
+
+.search-area{
+  position: relative;
+}
+
+.search-result{
+  position: absolute;
+  top: calc(100% - 20px);
+  left: 0;
+
+  width: 549px;
+  background: #1C341E;
+
+  padding: 30px;
+
+  display: none;
+
+  z-index: 100;
+}
+
+.search-result h2{
+  color: white;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.game-item{
+  height: 68px;
+  background: #aaa;
+  margin-bottom: 20px;
+}
